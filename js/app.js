@@ -4,15 +4,14 @@
 
 //1. Target the h3 element with the id of 'disclaimer' and change the contents to the follow finePrint variable.
 
-function findElemId(str) {
+function findId(str) {
     let idElem = document.getElementById(str);
     console.log(idElem)
     return idElem;
 }
-function findElemClass(str) {
+function findClass(str) {
     let classElem = document.getElementsByClassName(str);
     console.log(classElem)
-    return classElem;
 }
 
 var finePrint = 'Coupons VALID from Tuesday 12/4/2018 thru Saturday 6/29/2019. All sales FINAL. NO REFUNDS and EXCHANGES. And definitely NO RAINCHECKS! And ONLY POSITIVE reviews allowed on Social Media (FB, Instagram, Twitter, Yelp, etc.). And PLEASE Follow us on FB, Instagram, Twitter.'
@@ -48,16 +47,31 @@ discount1.innerHTML = "Free fries with purchase!"
 
 //6. Create a div element with the id of 'item2' and update the content to Hendrick's Gin. Append this element to William Grand & Sons div.
 
-let itemDiv = document.createElement('div');
-itemDiv.className = "item2";
-let findWilGrand = findElemId("brand2")
-findWilGrand.appendChild(itemDiv)
-itemDiv.innerHTML = "Hendrick's Gin"
+let itemDiv2 = document.createElement('div');
+itemDiv2.id = "item2";
+let findWilGrand = findId("brand2")
+findWilGrand.appendChild(itemDiv2)
+itemDiv2.innerHTML = "Hendrick's Gin"
 
 
 //7. Create a div element with the id of 'price2' and update the content to $34.99. Append this element to the Hendrick's Gin div.
 
+let priceDiv2 = document.createElement('div');
+priceDiv2.id = "price2";
+let findItem2 = findId("item2")
+findItem2.appendChild(priceDiv2);
+priceDiv2.innerHTML = "$34.99"
+
 //8. Create a button element with the id of 'discount3' and give it a content of 50% OFF Axe body soap!. Append this element to the appropriate div class 'block3.
+
+let buttonElem = document.createElement('button');
+buttonElem.id = "discount3"
+buttonElem.innerHTML = "50% OFF Axe body soap!";
+let findBlock3 = document.getElementsByClassName("block3")[0];
+console.log(findBlock3)
+findClass("block3")
+// console.log(findBlock3)
+findBlock3.appendChild(buttonElem)
 
 //9. Target the div element with a class of 'item' for the Panda Express section and update the content to Orange Chicken.
 
