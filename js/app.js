@@ -90,6 +90,9 @@ get2ndClassInItem.appendChild(buttonElem2)
 
 //11. Target the div element with the class of 'brand' for the red hoodie section and update the content to Uniqlo.
 
+let getBrand = findClass("brand", 1);
+getBrand.innerHTML = "Uniqlo"
+
 //12. Target the div element with the class of 'price' for the red hoodie section and update the content to 10,000. 
 
 //13. Create a div element with the class of 'brand' and give it a content of Hifiman Shangri-La. Append this element in the headphones section. 
