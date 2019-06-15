@@ -6,7 +6,13 @@
 
 var finePrint = 'Coupons VALID from Tuesday 12/4/2018 thru Saturday 6/29/2019. All sales FINAL. NO REFUNDS and EXCHANGES. And definitely NO RAINCHECKS! And ONLY POSITIVE reviews allowed on Social Media (FB, Instagram, Twitter, Yelp, etc.). And PLEASE Follow us on FB, Instagram, Twitter.'
 
+let changeDisclaimer = document.getElementById("disclaimer");
+console.log(changeDisclaimer)
+changeDisclaimer.innerHTML = finePrint;
+
 //2. Target the div elemenet with the id of 'brand1' and update the content to Nabisco.
+
+
 
 //3. Target the div element with the id of 'item1' and update the content with Cheeseburger Oreos. 
 
