@@ -9,6 +9,7 @@ function findId(str) {
     console.log(idElem)
     return idElem;
 }
+
 function findClass(str,num) {
     let classElem = document.getElementsByClassName(str)[num];
     console.log(classElem)
@@ -76,12 +77,16 @@ findBlock3.appendChild(buttonElem)
 
 //9. Target the div element with a class of 'item' for the Panda Express section and update the content to Orange Chicken.
 
-let getClassPE = findClass("item",0);
-getClassPE.innerHTML = "Orange Chicken"
+let get1stClassInItem = findClass("item",0);
+get1stClassInItem.innerHTML = "Orange Chicken"
 
 //10. Create a button element with a class of 'discount' and update the content to Free T-shirt and fortune cookie with purchase! Append this button to Panda Express section.
 
-let buttonElem2 = document.crea
+let buttonElem2 = document.createElement("button");
+buttonElem2.className = "discount";
+buttonElem2.innerHTML = "Free T-Shirt and fortune cookie with purchase!"
+let get2ndClassInItem = findClass("price", 0);
+get2ndClassInItem.appendChild(buttonElem2)
 
 //11. Target the div element with the class of 'brand' for the red hoodie section and update the content to Uniqlo.
 
