@@ -9,9 +9,10 @@ function findId(str) {
     console.log(idElem)
     return idElem;
 }
-function findClass(str) {
-    let classElem = document.getElementsByClassName(str);
+function findClass(str,num) {
+    let classElem = document.getElementsByClassName(str)[num];
     console.log(classElem)
+    return classElem;
 }
 
 var finePrint = 'Coupons VALID from Tuesday 12/4/2018 thru Saturday 6/29/2019. All sales FINAL. NO REFUNDS and EXCHANGES. And definitely NO RAINCHECKS! And ONLY POSITIVE reviews allowed on Social Media (FB, Instagram, Twitter, Yelp, etc.). And PLEASE Follow us on FB, Instagram, Twitter.'
@@ -75,7 +76,12 @@ findBlock3.appendChild(buttonElem)
 
 //9. Target the div element with a class of 'item' for the Panda Express section and update the content to Orange Chicken.
 
+let getClassPE = findClass("item",0);
+getClassPE.innerHTML = "Orange Chicken"
+
 //10. Create a button element with a class of 'discount' and update the content to Free T-shirt and fortune cookie with purchase! Append this button to Panda Express section.
+
+let buttonElem2 = document.crea
 
 //11. Target the div element with the class of 'brand' for the red hoodie section and update the content to Uniqlo.
 
